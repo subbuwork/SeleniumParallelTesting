@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel Test Suite" parallel="tests">
+    <test  name="SeleniumParallel_Chrome">
+        <parameter name="browser" value="gc"></parameter>
+        <classes>
+            <class name="selenium.SeleniumParllelTesting">
+                <!--<methods>
+                   <include name="test_parallel"></include>
+
+                </methods>-->
+
+            </class>
+        </classes>
+    </test>
+
+    <test  name="SeleniumParallel_FireFox">
+        <parameter name="browser" value="ff"></parameter>
+        <classes>
+            <class name="selenium.SeleniumParllelTesting">
+               <!-- <methods>
+                    <include name="test_parallel"></include>
+
+                </methods>-->
+
+            </class>
+        </classes>
+    </test>
+
+
+
+</suite>
